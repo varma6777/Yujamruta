@@ -54,17 +54,14 @@ export default function Home() {
             />
           </picture>
 
-          {/* Desktop Clickable Hotspots overlay matching the buttons on the artwork */}
+          {/* Desktop Clickable Hotspots overlay matching the buttons on the wide banner */}
           <div className="absolute inset-0 pointer-events-none hidden md:block">
-            {/* Yoga Registration Clickable Area - Direct to Registration Page */}
             <Link
               to="/yoga-registration"
               title={t("nav_registration")}
               className="pointer-events-auto absolute left-[17%] bottom-[9%] w-[30%] h-[15%] rounded-full cursor-pointer transition-transform duration-150 active:scale-98"
               aria-label={t("nav_registration")}
             ></Link>
-
-            {/* Buy Honey Clickable Area - Direct to Buy Honey Page */}
             <Link
               to="/buy-honey"
               title={t("nav_buy_honey")}
@@ -72,22 +69,25 @@ export default function Home() {
               aria-label={t("nav_buy_honey")}
             ></Link>
           </div>
+        </div>
 
-          {/* Mobile Clickable Hotspots overlay matching the buttons on the tall poster */}
-          <div className="absolute inset-0 pointer-events-none md:hidden block">
-            <Link
-              to="/yoga-registration"
-              title={t("nav_registration")}
-              className="pointer-events-auto absolute left-[6%] top-[68%] w-[42%] h-[6%] rounded-full cursor-pointer active:scale-95"
-              aria-label={t("nav_registration")}
-            ></Link>
-            <Link
-              to="/buy-honey"
-              title={t("nav_buy_honey")}
-              className="pointer-events-auto absolute left-[52%] top-[68%] w-[42%] h-[6%] rounded-full cursor-pointer active:scale-95"
-              aria-label={t("nav_buy_honey")}
-            ></Link>
-          </div>
+        {/* Platinum Mobile Quick Action Bar */}
+        <div className="md:hidden px-4 py-3 bg-gradient-to-b from-forest-950 via-forest-900 to-forest-950 border-t border-honey/30 flex items-center justify-center gap-3 shadow-elevated">
+          <Link
+            to="/yoga-registration"
+            className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-gradient-to-r from-honey via-honey-light to-honey text-forest-950 font-bold text-xs shadow-honey transition-transform active:scale-95"
+          >
+            <span>{isKn ? "ಯೋಗ ನೋಂದಣಿ" : "Yoga Registration"}</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+
+          <Link
+            to="/buy-honey"
+            className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-forest-900 text-honey-light border border-honey/40 font-bold text-xs shadow-md transition-transform active:scale-95"
+          >
+            <span>{isKn ? "ಜೇನು ಖರೀದಿಸಿ" : "Buy Forest Honey"}</span>
+            <ArrowRight className="w-3.5 h-3.5 text-honey" />
+          </Link>
         </div>
       </section>
 
