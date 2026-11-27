@@ -54,7 +54,7 @@ export default function Home() {
             />
           </picture>
 
-          {/* Clickable Hotspots overlay matching the buttons on the artwork */}
+          {/* Desktop Clickable Hotspots overlay matching the buttons on the artwork */}
           <div className="absolute inset-0 pointer-events-none hidden md:block">
             {/* Yoga Registration Clickable Area - Direct to Registration Page */}
             <Link
@@ -69,6 +69,22 @@ export default function Home() {
               to="/buy-honey"
               title={t("nav_buy_honey")}
               className="pointer-events-auto absolute left-[53%] bottom-[9%] w-[30%] h-[15%] rounded-full cursor-pointer transition-transform duration-150 active:scale-98"
+              aria-label={t("nav_buy_honey")}
+            ></Link>
+          </div>
+
+          {/* Mobile Clickable Hotspots overlay matching the buttons on the tall poster */}
+          <div className="absolute inset-0 pointer-events-none md:hidden block">
+            <Link
+              to="/yoga-registration"
+              title={t("nav_registration")}
+              className="pointer-events-auto absolute left-[6%] top-[68%] w-[42%] h-[6%] rounded-full cursor-pointer active:scale-95"
+              aria-label={t("nav_registration")}
+            ></Link>
+            <Link
+              to="/buy-honey"
+              title={t("nav_buy_honey")}
+              className="pointer-events-auto absolute left-[52%] top-[68%] w-[42%] h-[6%] rounded-full cursor-pointer active:scale-95"
               aria-label={t("nav_buy_honey")}
             ></Link>
           </div>
