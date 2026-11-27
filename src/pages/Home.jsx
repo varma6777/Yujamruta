@@ -39,23 +39,17 @@ export default function Home() {
 
   return (
     <div className="relative overflow-hidden">
-      {/* ===================== SECTION 1: OFFICIAL HERO BANNER (FULL WIDTH COVER) ===================== */}
-      <section className="relative w-full overflow-hidden bg-forest-950 border-b-2 border-honey/40 shadow-elevated">
+      {/* ===================== SECTION 1: OFFICIAL HERO BANNER (DESKTOP ONLY) ===================== */}
+      <section className="hidden md:block relative w-full overflow-hidden bg-forest-950 border-b-2 border-honey/40 shadow-elevated">
         <div className="relative w-full">
-          <picture>
-            <source
-              media="(max-width: 768px)"
-              srcSet="/assets/images/yujamrutha-hero-mobile.jpg?v=2"
-            />
-            <img
-              src="/assets/images/yujamrutha-hero-banner.jpg"
-              alt="Yujamrutha - Yoga, Natural Honey, Holistic Wellness. Balance Your Body. Calm Your Mind. Transform Your Life."
-              className="w-full h-auto object-cover object-center block"
-            />
-          </picture>
+          <img
+            src="/assets/images/yujamrutha-hero-banner.jpg"
+            alt="Yujamrutha - Yoga, Natural Honey, Holistic Wellness. Balance Your Body. Calm Your Mind. Transform Your Life."
+            className="w-full h-auto object-cover object-center block"
+          />
 
           {/* Desktop Clickable Hotspots overlay matching the buttons on the artwork */}
-          <div className="absolute inset-0 pointer-events-none hidden md:block">
+          <div className="absolute inset-0 pointer-events-none">
             {/* Yoga Registration Clickable Area - Direct to Registration Page */}
             <Link
               to="/yoga-registration"
@@ -69,22 +63,6 @@ export default function Home() {
               to="/buy-honey"
               title={t("nav_buy_honey")}
               className="pointer-events-auto absolute left-[53%] bottom-[9%] w-[30%] h-[15%] rounded-full cursor-pointer transition-transform duration-150 active:scale-98"
-              aria-label={t("nav_buy_honey")}
-            ></Link>
-          </div>
-
-          {/* Mobile Clickable Hotspots overlay matching "Join Yoga" and "By Honey" on mobile artwork */}
-          <div className="absolute inset-0 pointer-events-none md:hidden block">
-            <Link
-              to="/yoga-registration"
-              title={t("nav_registration")}
-              className="pointer-events-auto absolute left-[16%] top-[61%] w-[32%] h-[8%] rounded-full cursor-pointer active:scale-95"
-              aria-label={t("nav_registration")}
-            ></Link>
-            <Link
-              to="/buy-honey"
-              title={t("nav_buy_honey")}
-              className="pointer-events-auto absolute left-[54%] top-[61%] w-[33.5%] h-[8%] rounded-full cursor-pointer active:scale-95"
               aria-label={t("nav_buy_honey")}
             ></Link>
           </div>
