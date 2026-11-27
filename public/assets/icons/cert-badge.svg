@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="badgeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEFA8"/>
+      <stop offset="50%" stop-color="#DEAA2E"/>
+      <stop offset="100%" stop-color="#9E6C0C"/>
+    </linearGradient>
+  </defs>
+  <!-- Scalloped Seal Edge -->
+  <circle cx="100" cy="100" r="90" fill="url(#badgeGold)"/>
+  <circle cx="100" cy="100" r="82" fill="#FFFDF8"/>
+  <circle cx="100" cy="100" r="76" stroke="#DEAA2E" stroke-width="2" stroke-dasharray="3 3" fill="none"/>
+  
+  <!-- Icon Center: Trophy with Lotus -->
+  <g transform="translate(100, 72) scale(0.9)">
+    <path d="M-18 -15 L18 -15 L14 10 C12 22 0 26 0 26 C0 26 -12 22 -14 10 Z" fill="#DEAA2E" stroke="#8E5E0B" stroke-width="1.5"/>
+    <path d="M-18 -10 C-28 -10 -28 4 -16 6 L-15 1" fill="none" stroke="#8E5E0B" stroke-width="2.5"/>
+    <path d="M18 -10 C28 -10 28 4 16 6 L15 1" fill="none" stroke="#8E5E0B" stroke-width="2.5"/>
+    <rect x="-4" y="26" width="8" height="12" fill="#DEAA2E"/>
+    <rect x="-14" y="38" width="28" height="7" rx="3" fill="#8E5E0B"/>
+    <polygon points="0,-4 3,3 10,3 5,8 7,15 0,11 -7,15 -5,8 -10,3 -3,3" fill="#FFFBE6"/>
+  </g>
+
+  <!-- Text -->
+  <text x="100" y="142" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="800" fill="#2E1C0C" text-anchor="middle" letter-spacing="1.5">
+    CERTIFIED GURU
+  </text>
+  <text x="100" y="154" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#B37C12" text-anchor="middle">
+    DISTRICT CHAMPION
+  </text>
+  <text x="100" y="166" font-family="'Noto Sans Kannada', sans-serif" font-size="7.5" font-weight="600" fill="#58380D" text-anchor="middle">
+    ತೀರ್ಥಹಳ್ಳಿ &bull; ಕರ್ನಾಟಕ
+  </text>
+</svg>

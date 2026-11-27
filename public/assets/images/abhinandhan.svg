@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="haloBg" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#FFF8E8"/>
+      <stop offset="60%" stop-color="#FCEBC6"/>
+      <stop offset="100%" stop-color="#EED192"/>
+    </radialGradient>
+    <linearGradient id="goldMedal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE885"/>
+      <stop offset="50%" stop-color="#E5AF28"/>
+      <stop offset="100%" stop-color="#9E6F0C"/>
+    </linearGradient>
+    <linearGradient id="robe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9F5EE"/>
+      <stop offset="60%" stop-color="#EFE5D0"/>
+      <stop offset="100%" stop-color="#D7C39C"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D29969"/>
+      <stop offset="100%" stop-color="#AD6F3D"/>
+    </linearGradient>
+    <filter id="badgeShadow" x="-15%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#7B4C0A" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Portal / Golden Frame -->
+  <g filter="url(#badgeShadow)">
+    <circle cx="250" cy="240" r="195" fill="url(#haloBg)"/>
+    <circle cx="250" cy="240" r="195" stroke="#D3A23D" stroke-width="4" fill="none"/>
+    <circle cx="250" cy="240" r="185" stroke="#F1D79E" stroke-width="1.5" stroke-dasharray="6 4" fill="none"/>
+  </g>
+
+  <!-- Sacred Sunbeams -->
+  <g stroke="#DFC386" stroke-width="1.5" opacity="0.6">
+    <line x1="250" y1="50" x2="250" y2="75"/>
+    <line x1="384" y1="106" x2="367" y2="124"/>
+    <line x1="116" y1="106" x2="133" y2="124"/>
+    <line x1="440" y1="240" x2="415" y2="240"/>
+    <line x1="60" y1="240" x2="85" y2="240"/>
+  </g>
+
+  <!-- Yogi Figure (Abhinandhan) in serene focus -->
+  <g id="figure" transform="translate(0, 10)">
+    <!-- Shoulders & Traditional White Kurta / Angavastram -->
+    <path d="M135 425 C145 350 180 310 250 310 C320 310 355 350 365 425 Z" fill="url(#robe)"/>
+    
+    <!-- Angavastram / Golden Border Sash -->
+    <path d="M185 320 Q235 340 280 425 L245 425 Q215 350 170 330 Z" fill="#DDAA38"/>
+    <path d="M190 322 Q238 341 282 425" stroke="#FFF0B8" stroke-width="1.5" fill="none"/>
+
+    <!-- Neck -->
+    <path d="M228 260 L272 260 L276 312 L224 312 Z" fill="url(#skin)"/>
+    <!-- Collarbones / shadow -->
+    <path d="M225 305 Q250 315 275 305" stroke="#9A6133" stroke-width="2" fill="none" opacity="0.6"/>
+
+    <!-- Head & Face -->
+    <ellipse cx="250" cy="215" rx="46" ry="58" fill="url(#skin)"/>
+    
+    <!-- Ears -->
+    <ellipse cx="202" cy="218" rx="8" ry="16" fill="#C58957"/>
+    <ellipse cx="298" cy="218" rx="8" ry="16" fill="#C58957"/>
+
+    <!-- Hair (Neat Yogic bun / parted hair) -->
+    <path d="M204 195 C206 155 230 142 250 142 C270 142 294 155 296 195 C285 180 268 174 250 174 C232 174 215 180 204 195 Z" fill="#20150B"/>
+    <circle cx="250" cy="140" r="14" fill="#20150B"/>
+
+    <!-- Eyebrows (Gentle, focused) -->
+    <path d="M222 196 Q235 192 243 198" stroke="#25170B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M278 196 Q265 192 257 198" stroke="#25170B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Meditative Half-Closed Eyes -->
+    <path d="M224 207 Q233 214 242 208" stroke="#25170B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M276 207 Q267 214 258 208" stroke="#25170B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Nose -->
+    <path d="M250 206 L248 226 Q250 231 254 228" stroke="#9A6133" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- Calm Smile -->
+    <path d="M238 243 Q250 249 262 243" stroke="#874D24" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Tilak / Chandan on Forehead (Auspicious Indian yogic mark) -->
+    <path d="M246 178 Q250 188 254 178" stroke="#E5AF28" stroke-width="3" fill="none"/>
+    <circle cx="250" cy="188" r="2" fill="#B3281E"/>
+
+    <!-- Hands in Anjali Mudra (Namaste) at Heart Center -->
+    <g transform="translate(250, 360)">
+      <!-- Left Hand -->
+      <path d="M0 0 C-6 -18 -12 -38 0 -58 C4 -40 8 -20 0 0 Z" fill="#D29969" stroke="#9A6133" stroke-width="1.5"/>
+      <!-- Right Hand -->
+      <path d="M0 0 C6 -18 12 -38 0 -58 C-4 -40 -8 -20 0 0 Z" fill="#C58957" stroke="#9A6133" stroke-width="1.5"/>
+      <!-- Wrist Rudraksha beads -->
+      <circle cx="-10" cy="3" r="4.5" fill="#693C18"/>
+      <circle cx="-2" cy="5" r="4.5" fill="#7E4A20"/>
+      <circle cx="6" cy="5" r="4.5" fill="#693C18"/>
+      <circle cx="14" cy="3" r="4.5" fill="#7E4A20"/>
+    </g>
+  </g>
+
+  <!-- District Championship Gold Medal Emblem (Bottom Right) -->
+  <g transform="translate(355, 335)" filter="url(#badgeShadow)">
+    <!-- Ribbon V -->
+    <path d="M30 0 L45 50 L30 42 L15 50 Z" fill="#B72719"/>
+    <path d="M60 0 L45 50 L60 42 L75 50 Z" fill="#B72719"/>
+    <path d="M38 0 L45 50 L52 0 Z" fill="#E8B428"/>
+
+    <!-- Round Medal -->
+    <circle cx="45" cy="72" r="38" fill="url(#goldMedal)" stroke="#7F5605" stroke-width="2"/>
+    <circle cx="45" cy="72" r="32" fill="none" stroke="#FFF1B8" stroke-width="1.5" stroke-dasharray="3 2"/>
+
+    <!-- Star / Winner Trophy icon -->
+    <polygon points="45,52 49,63 60,63 51,70 54,81 45,74 36,81 39,70 30,63 41,63" fill="#FFFBE6" stroke="#8E5E0B" stroke-width="1"/>
+    
+    <text x="45" y="93" font-family="'Poppins', sans-serif" font-size="7" font-weight="800" fill="#4B3103" text-anchor="middle" letter-spacing="0.5">
+      DISTRICT
+    </text>
+    <text x="45" y="101" font-family="'Poppins', sans-serif" font-size="6.5" font-weight="800" fill="#784704" text-anchor="middle">
+      CHAMPION
+    </text>
+  </g>
+
+  <!-- Laurel Wreath along bottom border -->
+  <g transform="translate(250, 425)">
+    <!-- Name banner plaque -->
+    <rect x="-140" y="-12" width="280" height="38" rx="19" fill="#FFFDF8" stroke="#D3A23D" stroke-width="2"/>
+    <text x="0" y="8" font-family="'Playfair Display', Georgia, serif" font-size="15" font-weight="700" fill="#2E1C0C" text-anchor="middle">
+      ABHINANDHAN
+    </text>
+    <text x="0" y="21" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="600" fill="#B87B14" text-anchor="middle" letter-spacing="1">
+      CERTIFIED YOGA GURU &bull; DISTRICT WINNER
+    </text>
+  </g>
+</svg>

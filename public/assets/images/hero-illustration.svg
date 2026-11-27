@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF8E7" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#FCE6B2" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FAF1D9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B87B14"/>
+      <stop offset="50%" stop-color="#8E5E0B"/>
+      <stop offset="100%" stop-color="#5C3B05"/>
+    </linearGradient>
+    <linearGradient id="honeyDip" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F9D463"/>
+      <stop offset="60%" stop-color="#E29E1B"/>
+      <stop offset="100%" stop-color="#B77308"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A3B18A"/>
+      <stop offset="100%" stop-color="#588157"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#8E5E0B" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Background Aura Circles -->
+  <circle cx="300" cy="240" r="220" fill="url(#sunGlow)"/>
+  
+  <!-- Subtle Honeycomb Rings -->
+  <g stroke="#DFC48B" stroke-width="1.2" fill="none" opacity="0.45">
+    <polygon points="300,70 335,90 335,130 300,150 265,130 265,90"/>
+    <polygon points="370,110 405,130 405,170 370,190 335,170 335,130"/>
+    <polygon points="230,110 265,130 265,170 230,190 195,170 195,130"/>
+    <polygon points="405,170 440,190 440,230 405,250 370,230 370,190"/>
+    <polygon points="195,170 230,190 230,230 195,250 160,230 160,190"/>
+    <polygon points="370,230 405,250 405,290 370,310 335,290 335,250"/>
+    <polygon points="230,230 265,250 265,290 230,310 195,290 195,250"/>
+    <polygon points="300,270 335,290 335,330 300,350 265,330 265,290"/>
+  </g>
+
+  <!-- Sacred Geometry / Golden Aura Ring -->
+  <circle cx="300" cy="235" r="160" stroke="#E6BF68" stroke-width="2" fill="none" stroke-dasharray="4 6" opacity="0.7"/>
+  <circle cx="300" cy="235" r="145" stroke="#F1D28C" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- Golden Wildflowers of Western Ghats -->
+  <g transform="translate(110, 310)" fill="url(#honeyDip)">
+    <circle cx="15" cy="15" r="7"/>
+    <circle cx="15" cy="4" r="5" opacity="0.8"/>
+    <circle cx="26" cy="15" r="5" opacity="0.8"/>
+    <circle cx="15" cy="26" r="5" opacity="0.8"/>
+    <circle cx="4" cy="15" r="5" opacity="0.8"/>
+    <path d="M15 26 Q12 60 20 90" stroke="#7A9A60" stroke-width="3" fill="none"/>
+    <path d="M16 55 Q28 50 30 40" stroke="#7A9A60" stroke-width="2.5" fill="none"/>
+    <path d="M14 68 Q2 65 0 52" stroke="#7A9A60" stroke-width="2.5" fill="none"/>
+  </g>
+
+  <g transform="translate(450, 290)" fill="url(#honeyDip)">
+    <circle cx="15" cy="15" r="8"/>
+    <circle cx="15" cy="3" r="6" opacity="0.8"/>
+    <circle cx="27" cy="15" r="6" opacity="0.8"/>
+    <circle cx="15" cy="27" r="6" opacity="0.8"/>
+    <circle cx="3" cy="15" r="6" opacity="0.8"/>
+    <path d="M15 27 Q18 70 12 110" stroke="#7A9A60" stroke-width="3" fill="none"/>
+    <path d="M16 60 Q28 52 32 42" stroke="#7A9A60" stroke-width="2.5" fill="none"/>
+  </g>
+
+  <!-- Floating Honey Bees -->
+  <!-- Bee 1 Left -->
+  <g transform="translate(170, 150) rotate(-18)">
+    <ellipse cx="16" cy="12" rx="10" ry="7" fill="#E29E1B"/>
+    <line x1="12" y1="6" x2="12" y2="18" stroke="#3D2611" stroke-width="2.5"/>
+    <line x1="17" y1="5.5" x2="17" y2="18.5" stroke="#3D2611" stroke-width="2.5"/>
+    <line x1="22" y1="7" x2="22" y2="17" stroke="#3D2611" stroke-width="2.5"/>
+    <circle cx="7" cy="12" r="3.5" fill="#3D2611"/>
+    <!-- Wings -->
+    <ellipse cx="14" cy="4" rx="7" ry="4" fill="#FFFFFF" opacity="0.85" transform="rotate(-30 14 4)"/>
+    <ellipse cx="19" cy="5" rx="6" ry="3.5" fill="#FFFFFF" opacity="0.7" transform="rotate(-15 19 5)"/>
+  </g>
+
+  <!-- Bee 2 Right -->
+  <g transform="translate(410, 140) rotate(15) scale(0.9)">
+    <ellipse cx="16" cy="12" rx="10" ry="7" fill="#E29E1B"/>
+    <line x1="12" y1="6" x2="12" y2="18" stroke="#3D2611" stroke-width="2.5"/>
+    <line x1="17" y1="5.5" x2="17" y2="18.5" stroke="#3D2611" stroke-width="2.5"/>
+    <line x1="22" y1="7" x2="22" y2="17" stroke="#3D2611" stroke-width="2.5"/>
+    <circle cx="25" cy="12" r="3.5" fill="#3D2611"/>
+    <!-- Wings -->
+    <ellipse cx="14" cy="4" rx="7" ry="4" fill="#FFFFFF" opacity="0.85" transform="rotate(30 14 4)"/>
+  </g>
+
+  <!-- Central Lotus Base for Yogi -->
+  <g transform="translate(190, 360)">
+    <!-- Base Lotus Petals (Back) -->
+    <path d="M110 40 C70 50 30 35 10 15 C45 22 80 28 110 40 Z" fill="#E2B155" opacity="0.6"/>
+    <path d="M110 40 C150 50 190 35 210 15 C175 22 140 28 110 40 Z" fill="#E2B155" opacity="0.6"/>
+    <!-- Base Lotus Petals (Front) -->
+    <path d="M110 45 C80 60 40 45 30 28 C65 35 90 38 110 45 Z" fill="#D3972A"/>
+    <path d="M110 45 C140 60 180 45 190 28 C155 35 130 38 110 45 Z" fill="#D3972A"/>
+    <path d="M110 48 C95 62 70 55 60 42 C85 45 98 46 110 48 Z" fill="#BF7D12"/>
+    <path d="M110 48 C125 62 150 55 160 42 C135 45 122 46 110 48 Z" fill="#BF7D12"/>
+    <ellipse cx="110" cy="46" rx="28" ry="7" fill="#F8DE93"/>
+  </g>
+
+  <!-- Yogi Silhouette in Padmasana (Lotus Pose with Chin Mudra) -->
+  <g filter="url(#softShadow)">
+    <!-- Head -->
+    <circle cx="300" cy="190" r="23" fill="url(#bodyGrad)"/>
+    <!-- Neck -->
+    <path d="M294 212 L306 212 L308 224 L292 224 Z" fill="url(#bodyGrad)"/>
+    <!-- Torso -->
+    <path d="M280 224 C280 224 270 245 272 285 C273 300 285 325 292 340 L308 340 C315 325 327 300 328 285 C330 245 320 224 320 224 Z" fill="url(#bodyGrad)"/>
+    <!-- Shoulders & Arms -->
+    <!-- Left Arm in Dhyana / Chin Mudra on Knee -->
+    <path d="M280 228 C265 235 242 265 238 290 C234 315 240 338 250 348 C255 353 268 350 274 345 C268 340 262 332 260 320 C258 298 274 275 285 245 Z" fill="url(#bodyGrad)"/>
+    <!-- Right Arm in Dhyana / Chin Mudra on Knee -->
+    <path d="M320 228 C335 235 358 265 362 290 C366 315 360 338 350 348 C345 353 332 350 326 345 C332 340 338 332 340 320 C342 298 326 275 315 245 Z" fill="url(#bodyGrad)"/>
+    <!-- Crossed Legs / Padmasana Base -->
+    <path d="M245 345 C230 350 215 362 225 378 C235 390 270 388 300 385 C330 388 365 390 375 378 C385 362 370 350 355 345 C340 342 320 355 300 355 C280 355 260 342 245 345 Z" fill="url(#bodyGrad)"/>
+    <!-- Feet tucked -->
+    <ellipse cx="265" cy="365" rx="14" ry="7" fill="url(#bodyGrad)" transform="rotate(-15 265 365)"/>
+    <ellipse cx="335" cy="365" rx="14" ry="7" fill="url(#bodyGrad)" transform="rotate(15 335 365)"/>
+  </g>
+
+  <!-- Golden Honey Nectar Drops floating upwards from meditation aura -->
+  <!-- Drop Center -->
+  <path d="M300 135 C300 135 307 146 307 152 C307 156 303.8 159 300 159 C296.2 159 293 156 293 152 C293 146 300 135 300 135 Z" fill="url(#honeyDip)"/>
+  <ellipse cx="298.5" cy="149" rx="1.5" ry="3" fill="#FFF8DB" opacity="0.75" transform="rotate(-15 298.5 149)"/>
+
+  <!-- Drop Left -->
+  <path d="M260 170 C260 170 265 178 265 183 C265 186 262.7 188 260 188 C257.3 188 255 186 255 183 C255 178 260 170 260 170 Z" fill="url(#honeyDip)" opacity="0.85"/>
+
+  <!-- Drop Right -->
+  <path d="M340 170 C340 170 345 178 345 183 C345 186 342.7 188 340 188 C337.3 188 335 186 335 183 C335 178 340 170 340 170 Z" fill="url(#honeyDip)" opacity="0.85"/>
+
+  <!-- Golden Sunbeams radiating softly -->
+  <line x1="300" y1="65" x2="300" y2="40" stroke="#E6BF68" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <line x1="390" y1="100" x2="410" y2="80" stroke="#E6BF68" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <line x1="210" y1="100" x2="190" y2="80" stroke="#E6BF68" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <line x1="435" y1="175" x2="460" y2="165" stroke="#E6BF68" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <line x1="165" y1="175" x2="140" y2="165" stroke="#E6BF68" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+</svg>

@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FFF8E8;
+    color: #2D2319;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  /* Prevent iOS auto-zoom on input focus */
+  input, select, textarea {
+    font-size: 16px;
+  }
+
+  @media (min-width: 640px) {
+    input, select, textarea {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+/* Mobile viewport and tap utilities */
+html {
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+.safe-area-bottom {
+  padding-bottom: max(env(safe-area-inset-bottom, 0px), 4px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8E8;
+}
+::-webkit-scrollbar-thumb {
+  background: #C58B1B;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #063D25;
+}
+
+/* Botanical and mandala motif utilities */
+.bg-mandala {
+  background-image: radial-gradient(circle at center, rgba(217, 154, 24, 0.08) 0%, transparent 70%);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F8B838 0%, #D99A18 50%, #B07508 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.forest-gradient {
+  background: linear-gradient(135deg, #063D25 0%, #0B4F32 50%, #165A3B 100%);
+}
+
+.card-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-shine::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(60deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  transform: rotate(30deg);
+  transition: transform 0.75s ease;
+  pointer-events: none;
+}
+
+.card-shine:hover::after {
+  transform: rotate(30deg) translate(50%, 50%);
+}

@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="honeyAmber" cx="45%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#FFDD73"/>
+      <stop offset="35%" stop-color="#F5AB26"/>
+      <stop offset="75%" stop-color="#C5750A"/>
+      <stop offset="100%" stop-color="#874702"/>
+    </radialGradient>
+    <linearGradient id="glassGloss" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+      <stop offset="20%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="85%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="lidWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E1BF86"/>
+      <stop offset="50%" stop-color="#C09252"/>
+      <stop offset="100%" stop-color="#875A25"/>
+    </linearGradient>
+    <linearGradient id="goldPlate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF4CE"/>
+      <stop offset="50%" stop-color="#E8C362"/>
+      <stop offset="100%" stop-color="#B88A23"/>
+    </linearGradient>
+    <filter id="jarShadow" x="-20%" y="-10%" width="140%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#835208" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <!-- Ground glow -->
+  <ellipse cx="250" cy="455" rx="170" ry="24" fill="#E4CFA5" opacity="0.45"/>
+  <ellipse cx="250" cy="455" rx="120" ry="14" fill="#C59C55" opacity="0.3"/>
+
+  <!-- Honey Jar Container -->
+  <g filter="url(#jarShadow)">
+    <!-- Jar Body Fill (Honey) -->
+    <path d="M165 170 C165 170 140 210 140 300 C140 390 170 435 190 440 L310 440 C330 435 360 390 360 300 C360 210 335 170 335 170 Z" fill="url(#honeyAmber)"/>
+
+    <!-- Honey Level Surface -->
+    <ellipse cx="250" cy="180" rx="80" ry="15" fill="#FFE285" opacity="0.7"/>
+
+    <!-- Glass reflections & highlights -->
+    <!-- Left vertical gloss -->
+    <path d="M152 220 C150 270 152 350 175 425 C165 390 158 320 160 230 Z" fill="#FFFFFF" opacity="0.55"/>
+    <ellipse cx="180" cy="205" rx="8" ry="16" fill="#FFFFFF" opacity="0.6" transform="rotate(-20 180 205)"/>
+
+    <!-- Jar Neck -->
+    <rect x="180" y="145" width="140" height="30" rx="6" fill="#F4D38B" stroke="#D7A94B" stroke-width="2"/>
+    <ellipse cx="250" cy="145" rx="70" ry="10" fill="#E6BA64"/>
+
+    <!-- Wooden Lid with cloth & twine tie -->
+    <ellipse cx="250" cy="140" rx="76" ry="16" fill="url(#lidWood)"/>
+    <path d="M174 140 C174 125 210 115 250 115 C290 115 326 125 326 140 L326 150 C326 160 290 168 250 168 C210 168 174 160 174 150 Z" fill="url(#lidWood)"/>
+    <ellipse cx="250" cy="122" rx="76" ry="15" fill="#ECCB95"/>
+
+    <!-- Twine string around neck -->
+    <path d="M172 152 Q250 162 328 152" stroke="#7C521F" stroke-width="4" fill="none"/>
+    <path d="M174 155 Q250 165 326 155" stroke="#9A692B" stroke-width="2.5" fill="none"/>
+    <!-- Twine bow & tag -->
+    <circle cx="215" cy="165" r="4" fill="#7C521F"/>
+    <path d="M215 167 Q200 180 205 195 L220 190 Q218 175 215 167 Z" fill="#FAF1D9" stroke="#9A692B" stroke-width="1.5"/>
+    <text x="212" y="186" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#7C521F">100%</text>
+
+    <!-- Artisanal Label on Jar -->
+    <g transform="translate(170, 240)">
+      <!-- Label Backing (Cream parchment) -->
+      <rect x="0" y="0" width="160" height="135" rx="10" fill="#FFFDF8" stroke="#DDB65C" stroke-width="2"/>
+      <rect x="4" y="4" width="152" height="127" rx="8" fill="none" stroke="#E8CE8B" stroke-width="1" stroke-dasharray="3 3"/>
+      
+      <!-- Label Gold Ribbon Header -->
+      <rect x="25" y="12" width="110" height="20" rx="4" fill="url(#goldPlate)"/>
+      <text x="80" y="26" font-family="'Playfair Display', Georgia, serif" font-size="12" font-weight="700" fill="#422507" text-anchor="middle" letter-spacing="1">
+        YUJAMRUTHA
+      </text>
+
+      <text x="80" y="45" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#A77212" text-anchor="middle" letter-spacing="1.5">
+        PURE FARM HONEY
+      </text>
+
+      <!-- Multifloral Badge -->
+      <path d="M45 52 L115 52" stroke="#DEC17D" stroke-width="1"/>
+      <text x="80" y="66" font-family="'Noto Sans Kannada', 'Poppins', sans-serif" font-size="9" font-weight="600" fill="#3D2916" text-anchor="middle">
+        ಮಲೆನಾಡು ಬಹುಪುಷ್ಪ ಜೇನು
+      </text>
+      <text x="80" y="79" font-family="'Poppins', sans-serif" font-size="7" font-weight="500" fill="#7B5B37" text-anchor="middle">
+        Multifloral &bull; Raw &bull; Unfiltered
+      </text>
+
+      <g transform="translate(80, 95)">
+        <polygon points="0,-9 9,0 0,9 -9,0" fill="#F4D383" stroke="#B88A23" stroke-width="1"/>
+        <circle cx="0" cy="0" r="3" fill="#885208"/>
+      </g>
+
+      <text x="80" y="117" font-family="'Poppins', sans-serif" font-size="7" font-weight="600" fill="#A86E0E" text-anchor="middle">
+        ORIGIN: THIRTHAHALLI
+      </text>
+      <text x="80" y="127" font-family="'Poppins', sans-serif" font-size="6" font-weight="500" fill="#998064" text-anchor="middle">
+        Net Wt: 500g / 1000g
+      </text>
+    </g>
+
+    <!-- Glass Contour Highlights (Right) -->
+    <path d="M346 220 C350 280 345 360 325 425 C338 385 342 310 340 230 Z" fill="#FFFFFF" opacity="0.3"/>
+  </g>
+
+  <!-- Honey Dipper (Dripping liquid gold) -->
+  <g transform="translate(320, 80) rotate(35)">
+    <!-- Stick handle -->
+    <rect x="0" y="0" width="14" height="230" rx="7" fill="url(#lidWood)" stroke="#6C4318" stroke-width="1.5"/>
+    <ellipse cx="7" cy="8" rx="8" ry="4" fill="#ECCB95"/>
+    
+    <!-- Head Ribs -->
+    <g transform="translate(-13, 160)">
+      <rect x="0" y="0" width="40" height="8" rx="4" fill="#C59252" stroke="#6C4318" stroke-width="1.5"/>
+      <rect x="-3" y="12" width="46" height="8" rx="4" fill="#C59252" stroke="#6C4318" stroke-width="1.5"/>
+      <rect x="-5" y="24" width="50" height="9" rx="4" fill="#C59252" stroke="#6C4318" stroke-width="1.5"/>
+      <rect x="-3" y="37" width="46" height="8" rx="4" fill="#C59252" stroke="#6C4318" stroke-width="1.5"/>
+      <rect x="0" y="49" width="40" height="8" rx="4" fill="#C59252" stroke="#6C4318" stroke-width="1.5"/>
+      <rect x="5" y="60" width="30" height="7" rx="3.5" fill="#C59252" stroke="#6C4318" stroke-width="1.5"/>
+      
+      <!-- Golden Honey Coating over Dipper -->
+      <path d="M-6 26 C-6 26 -2 72 20 74 C42 72 46 26 46 26 C36 40 4 40 -6 26 Z" fill="url(#honeyAmber)" opacity="0.85"/>
+      
+      <!-- Honey Drop Dripping down -->
+      <path d="M20 74 C16 88 10 102 10 112 C10 118 14.5 122 20 122 C25.5 122 30 118 30 112 C30 102 24 88 20 74 Z" fill="#F8A71F" stroke="#DF8A07" stroke-width="1"/>
+      <ellipse cx="18" cy="113" rx="2" ry="4" fill="#FFF2BD" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- Little Bee near Jar -->
+  <g transform="translate(100, 180) rotate(-25)">
+    <ellipse cx="16" cy="12" rx="11" ry="8" fill="#E29E1B"/>
+    <line x1="12" y1="5" x2="12" y2="19" stroke="#3D2611" stroke-width="2.5"/>
+    <line x1="17" y1="4.5" x2="17" y2="19.5" stroke="#3D2611" stroke-width="2.5"/>
+    <circle cx="6" cy="12" r="4" fill="#3D2611"/>
+    <ellipse cx="14" cy="3" rx="8" ry="4.5" fill="#FFFFFF" opacity="0.8" transform="rotate(-30 14 3)"/>
+    <ellipse cx="18" cy="4" rx="7" ry="4" fill="#FFFFFF" opacity="0.65" transform="rotate(-15 18 4)"/>
+  </g>
+</svg>
