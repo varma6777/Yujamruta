@@ -42,14 +42,20 @@ export default function Home() {
       {/* ===================== SECTION 1: OFFICIAL HERO BANNER (FULL WIDTH COVER) ===================== */}
       <section className="relative w-full overflow-hidden bg-forest-950 border-b-2 border-honey/40 shadow-elevated">
         <div className="relative w-full">
-          <img
-            src="/assets/images/yujamrutha-hero-banner.jpg"
-            alt="Yujamrutha - Yoga, Natural Honey, Holistic Wellness. Balance Your Body. Calm Your Mind. Transform Your Life."
-            className="w-full h-auto object-cover object-center block"
-          />
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcSet="/assets/images/yujamrutha-hero-banner-mobile.jpg"
+            />
+            <img
+              src="/assets/images/yujamrutha-hero-banner.jpg"
+              alt="Yujamrutha - Yoga, Natural Honey, Holistic Wellness. Balance Your Body. Calm Your Mind. Transform Your Life."
+              className="w-full h-auto object-cover object-center block"
+            />
+          </picture>
 
           {/* Clickable Hotspots overlay matching the buttons on the artwork */}
-          <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute inset-0 pointer-events-none hidden md:block">
             {/* Yoga Registration Clickable Area - Direct to Registration Page */}
             <Link
               to="/yoga-registration"
