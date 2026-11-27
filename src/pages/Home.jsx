@@ -45,7 +45,7 @@ export default function Home() {
           <picture>
             <source
               media="(max-width: 768px)"
-              srcSet="/assets/images/yujamrutha-hero-mobile.jpg"
+              srcSet="/assets/images/yujamrutha-hero-mobile.jpg?v=2"
             />
             <img
               src="/assets/images/yujamrutha-hero-banner.jpg"
@@ -78,13 +78,13 @@ export default function Home() {
             <Link
               to="/yoga-registration"
               title={t("nav_registration")}
-              className="pointer-events-auto absolute left-[16%] top-[78%] w-[34%] h-[12%] rounded-full cursor-pointer active:scale-95"
+              className="pointer-events-auto absolute left-[16%] top-[61%] w-[32%] h-[8%] rounded-full cursor-pointer active:scale-95"
               aria-label={t("nav_registration")}
             ></Link>
             <Link
               to="/buy-honey"
               title={t("nav_buy_honey")}
-              className="pointer-events-auto absolute left-[54%] top-[78%] w-[34%] h-[12%] rounded-full cursor-pointer active:scale-95"
+              className="pointer-events-auto absolute left-[54%] top-[61%] w-[33.5%] h-[8%] rounded-full cursor-pointer active:scale-95"
               aria-label={t("nav_buy_honey")}
             ></Link>
           </div>
